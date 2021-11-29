@@ -1,0 +1,71 @@
+[
+  {
+    "projectName": "Glass Shop",
+    "projectType": "Full stack web application",
+    "category": ["Sunglass", "Fashion"],
+    "technologies": [
+      "Html",
+      "Css",
+      "React",
+      "Firebase",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongodB atlas"
+    ],
+    "bannerImg": "https://i.ibb.co/qxcPvX2/project-1.png",
+    "img": "https://i.ibb.co/zS1STWH/Screenshot-2021-11-29-at-20-31-06-Welcome-to-Glass-Shop-world.png",
+    "description": [
+      "Build front-end with JavaScript/React/Tailwind and others packages. And developed backend and database with Node.js/Express/Mongo dB atlas.",
+      "Implemented dual dashboard for admin and user (to see admin panel login with: admin@admin.com/123456).",
+      "On the user dashboard they would be able to view & delete their previous ordered product. And also, all give their feedback on the “Add Review” page."
+    ]
+  },
+  {
+    "projectName": "Knock Knock Service Center (KKSC)",
+    "projectType": "Full stack web application",
+    "category": ["Delivary", "Courier Service"],
+    "technologies": [
+      "Html",
+      "Css",
+      "React",
+      "Firebase",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongodB atlas"
+    ],
+    "bannerImg": "https://i.ibb.co/LdQ9Wpj/project-2.png",
+    "img": "https://i.ibb.co/xMNkjW5/Screenshot-2021-11-29-at-20-24-31-Welcome-to-Knock-Knock-delebery-center.png",
+    "description": [
+      "JavaScript/React/MongoDB based goods delivery site implemented also firebase authentication.",
+      "Simple error handling while user wants to signup/sign in. Users data store in MongoDB atlas through node.js/express rest API. ",
+      "User can create signup/sign in and see their orders on the “My Order” page."
+    ]
+  },
+  {
+    "projectName": "getWell C.C.",
+    "projectType": "Front-end base application",
+    "category": ["Medical", "Clinic", "Hospital"],
+    "technologies": ["Html", "Css", "React", "Firebase", "React Router"],
+    "img": "https://i.ibb.co/93TtPyq/screencapture-getwell-clinic-center-web-app-2021-11-29-20-15-03.png",
+    "bannerImg": "https://i.ibb.co/mBSfwrt/project-3.png",
+    "description": [
+      "Front-end targeted clinic center web application which authentication accomplished by firebase and also handled basic errors",
+      "User can able to register/sign in with third-party providers Facebook & Google",
+      "Private protected route designed and good user experience focused"
+    ]
+  },
+  {
+    "projectName": "World Learner",
+    "projectType": "Front-end application",
+    "category": ["Coaching Center", "Eduaction"],
+    "technologies": ["Html", "Css", "Tailwind", "React", "React Router"],
+    "ing": "https://i.ibb.co/64ShDCJ/screencapture-worldlearner-netlify-app-2021-11-29-20-14-04.png",
+    "bannerImg": "https://i.ibb.co/x3xJJtG/project-4.png",
+    "description": [
+      "Build this application focused on it's look. It hast total four pages impleamented by react router dom",
+      "User can see Service details information form service packages."
+    ]
+  }
+]
