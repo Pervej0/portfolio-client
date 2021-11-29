@@ -15,6 +15,9 @@
     ],
     "bannerImg": "https://i.ibb.co/qxcPvX2/project-1.png",
     "img": "https://i.ibb.co/zS1STWH/Screenshot-2021-11-29-at-20-31-06-Welcome-to-Glass-Shop-world.png",
+    "liveSite": "https://niche-products.firebaseapp.com/",
+    "clientCode": "https://github.com/Pervej0/glass-store-client",
+    "serverCode": "https://github.com/Pervej0/glass-store-server",
     "description": [
       "Build front-end with JavaScript/React/Tailwind and others packages. And developed backend and database with Node.js/Express/Mongo dB atlas.",
       "Implemented dual dashboard for admin and user (to see admin panel login with: admin@admin.com/123456).",
@@ -37,6 +40,9 @@
     ],
     "bannerImg": "https://i.ibb.co/LdQ9Wpj/project-2.png",
     "img": "https://i.ibb.co/xMNkjW5/Screenshot-2021-11-29-at-20-24-31-Welcome-to-Knock-Knock-delebery-center.png",
+    "liveSite": "https://knock-kncok-ceb54.firebaseapp.com/",
+    "clientCode": "https://github.com/Pervej0/knock-knock-client",
+    "serverCode": "https://github.com/Pervej0/knock-kncok-server",
     "description": [
       "JavaScript/React/MongoDB based goods delivery site implemented also firebase authentication.",
       "Simple error handling while user wants to signup/sign in. Users data store in MongoDB atlas through node.js/express rest API. ",
@@ -50,6 +56,9 @@
     "technologies": ["Html", "Css", "React", "Firebase", "React Router"],
     "img": "https://i.ibb.co/93TtPyq/screencapture-getwell-clinic-center-web-app-2021-11-29-20-15-03.png",
     "bannerImg": "https://i.ibb.co/mBSfwrt/project-3.png",
+    "liveSite": "https://getwell-clinic-center.web.app/",
+    "clientCode": "https://github.com/Pervej0/getWell-clinic-center",
+    "serverCode": "",
     "description": [
       "Front-end targeted clinic center web application which authentication accomplished by firebase and also handled basic errors",
       "User can able to register/sign in with third-party providers Facebook & Google",
@@ -63,6 +72,9 @@
     "technologies": ["Html", "Css", "Tailwind", "React", "React Router"],
     "ing": "https://i.ibb.co/64ShDCJ/screencapture-worldlearner-netlify-app-2021-11-29-20-14-04.png",
     "bannerImg": "https://i.ibb.co/x3xJJtG/project-4.png",
+    "liveSite": "https://worldlearner.netlify.app/",
+    "clientCode": "https://github.com/Pervej0/world-learner-client",
+    "serverCode": "",
     "description": [
       "Build this application focused on it's look. It hast total four pages impleamented by react router dom",
       "User can see Service details information form service packages."

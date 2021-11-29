@@ -20,7 +20,7 @@ const Projects = () => {
         </div>
         <Row className="g-4">
           {projects.map((item) => (
-            <ProjectItem project={item} />
+            <ProjectItem project={item} key={item.projectName} />
           ))}
         </Row>
       </Container>

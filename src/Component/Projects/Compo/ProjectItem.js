@@ -1,19 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col } from "react-bootstrap";
 import { MyButton } from "../../StyledComponent/StyledComponent";
+import ProjectDetails from "./ProjectDetails";
 
 const ProjectItem = ({ project }) => {
-  const {
-    projectName,
-    projectType,
-    category,
-    technologies,
-    description,
-    bannerImg,
-  } = project;
+  const [lgShow, setLgShow] = useState(false);
+  const { projectName, bannerImg } = project;
 
   return (
     <Col xs={12} md={6}>
+      <ProjectDetails lgShow={lgShow} setLgShow={setLgShow} project={project} />
       <div className="border">
         <div className="item">
           <div className="img-box">
@@ -23,7 +19,12 @@ const ProjectItem = ({ project }) => {
             <h3>{projectName}</h3>
           </div>
           <div className="details-btn">
-            <MyButton backgroundColor="transparent">Details</MyButton>
+            <MyButton
+              backgroundColor="transparent"
+              onClick={() => setLgShow(true)}
+            >
+              Details
+            </MyButton>
           </div>
         </div>
       </div>
