@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import SocialIcon from "../Layout/SocialIcon/SocialIcon";
-import { CustomContainer } from "../StyledComponent/StyledComponent";
 
 const Footer = () => {
   return (

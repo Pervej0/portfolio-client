@@ -8,6 +8,7 @@ import {
 import Resume from "../../file/Md Pervej Hossain Web developer.pdf";
 import Coder from "../../images/coder.png";
 import SocialIcon from "../Layout/SocialIcon/SocialIcon";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -18,7 +19,9 @@ const HeroSection = () => {
             <h6 className="text-light">Hello, I'm </h6>
             <NameHeading>Md Pervej Hossain</NameHeading>
             <h5 className="text-light fw-bold mb-4">Web Developer</h5>
-            <MyButton backgroundColor="white">Hire me</MyButton>
+            <a href="#contact">
+              <MyButton backgroundColor="white">Hire me</MyButton>
+            </a>
 
             <a className="ms-md-3 ms-0 mb-4" href={Resume} download>
               <MyButton backgroundColor="transparent">Download Resume</MyButton>
