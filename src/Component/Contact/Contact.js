@@ -1,10 +1,12 @@
-import Button from "@restart/ui/esm/Button";
 import React, { useState } from "react";
 import { Col, Container, FloatingLabel, Form, Row } from "react-bootstrap";
 import { CustomContainer, MyButton } from "../StyledComponent/StyledComponent";
+import emailjs from "emailjs-com";
+import ToastAlert from "./Compo/ToastAlert";
 
 const Contact = () => {
   const [details, setDetails] = useState();
+  const [show, setShow] = useState(false);
 
   const handleBlur = (e) => {
     const name = e.target.name;
@@ -14,7 +16,20 @@ const Contact = () => {
   };
   const submitHandle = (e) => {
     e.preventDefault();
-    console.log(details);
+    emailjs
+      .sendForm(
+        "service_678l4q7",
+        "template_fwqi5vc",
+        e.target,
+        "user_GWtl3TdOBbsVHiXl4Gxd3"
+      )
+      .then((res) => {
+        if (res.status === 200) {
+          setShow(true);
+          e.target.reset();
+        }
+      })
+      .catch((error) => console.log(error));
   };
   return (
     <CustomContainer>
@@ -23,11 +38,12 @@ const Contact = () => {
           <small className="text-uppercase">Contact</small>
           <h1 className="fw-bolder">Get in Touch</h1>
           <p className="">
-            You are welcome to knock me any time. I will reach you ASAP.
+            You are welcome to knock me at any time. I will reach you ASAP.
           </p>
         </div>
         <Row className="pt-5">
           <Col xs={12} md={6}>
+            <ToastAlert show={show} setShow={setShow} />
             <Form onSubmit={submitHandle}>
               <FloatingLabel
                 controlId="floatingTextarea2"
@@ -39,7 +55,8 @@ const Contact = () => {
                   type="text"
                   style={{ border: "1px solid rgba(255,255,255,.1)" }}
                   placeholder="Name"
-                  name="Name"
+                  name="name"
+                  required
                   onBlur={handleBlur}
                 />
               </FloatingLabel>
@@ -53,13 +70,14 @@ const Contact = () => {
                   placeholder="Email"
                   className="bg-transparent text-light shadow-none"
                   style={{ border: "1px solid rgba(255,255,255,.1)" }}
-                  name="Email"
+                  name="user-email"
+                  required
                   onBlur={handleBlur}
                 />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingTextarea2"
-                label="Comments"
+                label="Message"
                 className="mb-t text-light"
               >
                 <Form.Control
@@ -70,7 +88,7 @@ const Contact = () => {
                     border: "1px solid rgba(255,255,255,.1)",
                   }}
                   className="bg-transparent text-light shadow-none"
-                  name="Message"
+                  name="message"
                   onBlur={handleBlur}
                 />
               </FloatingLabel>

@@ -13,7 +13,11 @@ function App() {
           <Route
             path="/"
             index
-            element={[<Header />, <HeroSection />, <Contact />]}
+            element={[
+              <Header key="0" />,
+              <HeroSection key="1" />,
+              <Contact key="2" />,
+            ]}
           />
         </Routes>
       </BrowserRouter>
