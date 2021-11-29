@@ -3,6 +3,7 @@ import { Col, Container, FloatingLabel, Form, Row } from "react-bootstrap";
 import { CustomContainer, MyButton } from "../StyledComponent/StyledComponent";
 import emailjs from "emailjs-com";
 import ToastAlert from "./Compo/ToastAlert";
+import MyLocation from "./Compo/MyLocation";
 
 const Contact = () => {
   const [details, setDetails] = useState();
@@ -32,7 +33,7 @@ const Contact = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <CustomContainer>
+    <CustomContainer id="contact">
       <Container>
         <div className="text-light text-center mb-5">
           <small className="text-uppercase">Contact</small>
@@ -41,7 +42,7 @@ const Contact = () => {
             You are welcome to knock me at any time. I will reach you ASAP.
           </p>
         </div>
-        <Row className="pt-5">
+        <Row className="pt-5 g-5">
           <Col xs={12} md={6}>
             <ToastAlert show={show} setShow={setShow} />
             <Form onSubmit={submitHandle}>
@@ -101,7 +102,9 @@ const Contact = () => {
               </MyButton>
             </Form>
           </Col>
-          <Col xs={12} md={6}></Col>
+          <Col xs={12} md={6}>
+            <MyLocation />
+          </Col>
         </Row>
       </Container>
     </CustomContainer>

@@ -14,7 +14,7 @@ const Header = () => {
       <Container>
         <Navbar.Brand
           href="#home"
-          className="text-light"
+          className="text-light fw-bold"
           style={{ fontFamily: "Italianno, cursive", fontSize: 45 }}
         >
           Pervej
@@ -29,13 +29,19 @@ const Header = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              href="#about"
               className="text-white text-uppercase fw-bolder"
             >
               About
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              href="#projects"
+              className="text-white text-uppercase fw-bolder"
+            >
+              Projects
+            </Nav.Link>
+            <Nav.Link
+              href="#contact"
               className="text-white text-uppercase fw-bolder"
             >
               Contact
