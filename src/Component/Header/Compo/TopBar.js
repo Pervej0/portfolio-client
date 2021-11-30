@@ -22,7 +22,7 @@ const TopBar = () => {
             &nbsp;
             <FontAwesomeIcon icon={faSmileBeam} className="text-warning" />
           </div>
-          <div className="text-light">
+          <div className="text-light text-center">
             <small className="text-light mx-3">
               <FontAwesomeIcon icon={faPhoneAlt} />
               &nbsp; +88 01685445764

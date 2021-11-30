@@ -28,13 +28,7 @@ function App() {
     <div className="App">
       {isLoading ? (
         <Loader
-          className="text-center"
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transfrom: "translate(-50%,-50%))",
-          }}
+          className="text-center preLoader"
           type="Circles"
           color="#00BFFF"
           height={80}

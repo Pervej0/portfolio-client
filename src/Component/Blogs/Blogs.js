@@ -32,7 +32,7 @@ const Blogs = () => {
               <Blog key={item.title} blog={item} />
             ))}
           </Col>
-          <Col xs={6} lg={4}>
+          <Col xs={12} lg={4}>
             <div style={{ backgroundColor: "#2B2B2B", height: "100%" }}>
               <div>
                 <img

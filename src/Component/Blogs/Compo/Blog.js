@@ -9,7 +9,7 @@ const Blog = ({ blog }) => {
   return (
     <Col xs={12} style={{ width: "100%" }}>
       <div className="mt-4 row" style={{ backgroundColor: "#2B2B2B" }}>
-        <div className="px-0 col-12 col-md-4">
+        <div className="px-sm-0 col-12 col-md-4">
           <img
             className="img-fluid"
             src={img}
