@@ -13,7 +13,8 @@ import { useEffect, useState } from "react";
 import AboutMe from "./Component/AboutMe/AboutMe";
 import Skills from "./Component/Skills/Skills";
 import Blogs from "./Component/Blogs/Blogs";
-// import "./MouseMove/MouseMove";
+import AboutMeDetails from "./Component/AboutMe/Compo/AboutMeDetails";
+import TopBar from "./Component/Header/Compo/TopBar";
 
 function App() {
   const [isLoading, setIsloading] = useState(true);
@@ -41,22 +42,24 @@ function App() {
         />
       ) : (
         <BrowserRouter>
+          <TopBar />
           <Routes>
             <Route
               path="/"
               index
               element={[
-                <Header key="0" />,
+                <Header key={0} />,
                 <HeroSection key="1" />,
                 <AboutMe key="2" />,
                 <Skills key="3" />,
                 <Projects key="4" />,
                 <Blogs key="5" />,
                 <Contact key="6" />,
-                <Footer key="7" />,
               ]}
             />
+            <Route path="aboutMe" element={<AboutMeDetails />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       )}
     </div>

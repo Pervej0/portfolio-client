@@ -54,3 +54,7 @@
 .projects .item:hover .details-btn {
   display: block;
 }
+
+.projects .project-details h6 {
+  font-size: 20px;
+}

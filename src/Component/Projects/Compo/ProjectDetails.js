@@ -1,6 +1,5 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-import Slider from "react-animated-slider";
 
 const ProjectDetails = ({ lgShow, setLgShow, project }) => {
   const {
@@ -38,32 +37,26 @@ const ProjectDetails = ({ lgShow, setLgShow, project }) => {
         <div className="text-center" style={imageStyle}>
           <img className="img-fluid" src={images[0]} alt="project-banner" />
         </div>
-        <div className="my-3 py-3">
-          <h4>
+        <div className="my-3 py-3 project-details">
+          <h6>
             <span className="fw-bold text-uppercase">Project type: </span>
-            <span className="fs-5">{projectType}</span>
-          </h4>
-          <h4>
+            <span>{projectType}</span>
+          </h6>
+          <h6>
             <span className="fw-bold text-uppercase">Categories: </span>
             {category.map((item, index) => (
-              <span className="fs-5" key={index}>
-                {item}
-              </span>
+              <span key={index}>{item},&nbsp;</span>
             ))}
-          </h4>
-          <h4>
+          </h6>
+          <h6>
             <span className="fw-bold text-uppercase">Technologies: </span>
             {technologies.map((item, index) => (
-              <span className="fs-5" key={index}>
-                {item},&nbsp;
-              </span>
+              <span key={index}>{item},&nbsp;</span>
             ))}
-          </h4>
+          </h6>
           <ul className="py-3">
             {description.map((item, index) => (
-              <li className="fs-5" key={index}>
-                {item},
-              </li>
+              <li key={index}>{item},</li>
             ))}
           </ul>
           <div className="d-flex flex-wrap">

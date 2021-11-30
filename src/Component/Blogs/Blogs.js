@@ -26,7 +26,7 @@ const Blogs = () => {
           <h1 className="fw-bolder">Demo Blogs</h1>
           <p>This is sample of blogs UI real mine will come soon.</p>
         </div>
-        <Row className="pt-5 align-items-baseline gy-4">
+        <Row className="pt-5 align-items-center gy-4">
           <Col xs={12} lg={8}>
             {blogs.slice(0, 2).map((item) => (
               <Blog key={item.title} blog={item} />

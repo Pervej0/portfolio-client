@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { CustomContainer, MyButton } from "../StyledComponent/StyledComponent";
 import Boy from "../../images/boy.png";
+import Resume from "../../file/Md Pervej Hossain Web developer.pdf";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -26,15 +28,14 @@ const AboutMe = () => {
               hendrerit. Suspendisse varius sapien odio, in gravida ipsum luctus
               id. Ut nisl erat, dignissim sed volutpat at, hendrerit imperdiet
               purus. Maecenas fringilla, augue sed vulputate ullamcorper, risus
-              lorem facilisis massa, a varius nunc tellus sed odio. <br />
-              Suspendisse fermentum lobortis elit sit amet vehicula. Etiam in
-              dolor vitae leo euismod consequat a vitae ligula.Nunc viverra enim
-              purus, vel luctus ante tempus vel. Vivamus et metus massa.
-              Pellentesque at nulla velit. Morbi pellentesque egestas massa in
-              scelerisque. Vivamus pharetra dolor enim, vel vulputate erat
-              euismod sit amet.
+              lorem facilisis massa, a varius nunc tellus sed odio.
             </p>
-            <MyButton backgroundColor="white">Download Reseume</MyButton>
+            <Link to="aboutMe">
+              <MyButton backgroundColor="transparent">Read More</MyButton>
+            </Link>
+            <a className="ms-lg-3 ms-sm-3 ms-0  my-4" href={Resume} download>
+              <MyButton backgroundColor="white">Download Resume</MyButton>
+            </a>
           </Col>
         </Row>
       </Container>

@@ -43,8 +43,8 @@ const Skills = () => {
               </SkillsItem>
               <div>
                 <p className="text-light mt-3">
-                  Mobile fast responsive design layout for all devices is a top
-                  priority
+                  Mobile fast responsive design SharedLayout for all devices is
+                  a top priority
                 </p>
               </div>
             </SkillsBox>

@@ -1,7 +1,7 @@
 import { faComment, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import { MyButton } from "../../StyledComponent/StyledComponent";
 
 const Blog = ({ blog }) => {

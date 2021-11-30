@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import TopBar from "./Compo/TopBar";
 import "./Header.css";
 
 const Header = () => {
@@ -12,7 +11,6 @@ const Header = () => {
   };
   return (
     <>
-      <TopBar />
       <header
         style={headerStyle}
         className="position-sticky top-0 w-100 zindex-sticky"
