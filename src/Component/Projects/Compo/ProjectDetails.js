@@ -1,5 +1,6 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
+import Slider from "react-animated-slider";
 
 const ProjectDetails = ({ lgShow, setLgShow, project }) => {
   const {
@@ -8,11 +9,19 @@ const ProjectDetails = ({ lgShow, setLgShow, project }) => {
     category,
     technologies,
     description,
-    bannerImg,
     liveSite,
     clientCode,
+    images,
     serverCode,
   } = project;
+
+  const imageStyle = {
+    height: "400px",
+    width: "auto",
+    textAlign: "center",
+    overflowY: "scroll",
+  };
+
   return (
     <Modal
       size="lg"
@@ -26,31 +35,31 @@ const ProjectDetails = ({ lgShow, setLgShow, project }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div>
-          <img className="img-fluid" src={bannerImg} alt="project-banner" />
+        <div className="text-center" style={imageStyle}>
+          <img className="img-fluid" src={images[0]} alt="project-banner" />
         </div>
-        <div className="my-3">
+        <div className="my-3 py-3">
           <h4>
-            <span className="fw-bold">Project type: </span>
+            <span className="fw-bold text-uppercase">Project type: </span>
             <span className="fs-5">{projectType}</span>
           </h4>
-          <h3>
-            <span className="fw-bold">Categories: </span>
+          <h4>
+            <span className="fw-bold text-uppercase">Categories: </span>
             {category.map((item, index) => (
               <span className="fs-5" key={index}>
-                {item},{" "}
+                {item}
               </span>
             ))}
-          </h3>
-          <h3>
-            <span className="fw-bold">Technologies: </span>
+          </h4>
+          <h4>
+            <span className="fw-bold text-uppercase">Technologies: </span>
             {technologies.map((item, index) => (
               <span className="fs-5" key={index}>
-                {item},
+                {item},&nbsp;
               </span>
             ))}
-          </h3>
-          <ul>
+          </h4>
+          <ul className="py-3">
             {description.map((item, index) => (
               <li className="fs-5" key={index}>
                 {item},

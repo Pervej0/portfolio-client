@@ -8,11 +8,10 @@ import {
 import Resume from "../../file/Md Pervej Hossain Web developer.pdf";
 import Coder from "../../images/coder.png";
 import SocialIcon from "../Layout/SocialIcon/SocialIcon";
-import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <CustomContainer className="d-flex align-items-center">
+    <CustomContainer id="home" className="d-flex align-items-center">
       <Container>
         <Row className="align-items-center g-4">
           <Col xs={12} md={6}>
@@ -23,7 +22,7 @@ const HeroSection = () => {
               <MyButton backgroundColor="white">Hire me</MyButton>
             </a>
 
-            <a className="ms-md-3 ms-0 mb-4" href={Resume} download>
+            <a className="ms-lg-3 ms-sm-3 ms-0  my-4" href={Resume} download>
               <MyButton backgroundColor="transparent">Download Resume</MyButton>
             </a>
 

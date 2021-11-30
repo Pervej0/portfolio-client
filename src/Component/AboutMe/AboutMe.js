@@ -1,7 +1,45 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { CustomContainer, MyButton } from "../StyledComponent/StyledComponent";
+import Boy from "../../images/boy.png";
 
 const AboutMe = () => {
-  return <div></div>;
+  return (
+    <CustomContainer id="about">
+      <Container>
+        <div className="text-light text-center mb-5">
+          <h1 className="fw-bolder">About Me</h1>
+        </div>
+        <Row className="pt-5 g-5">
+          <Col xs={12} md={6}>
+            <img className="img-fluid" src={Boy} alt="" />
+          </Col>
+          <Col xs={12} md={6}>
+            <h1 className="text-light" style={{ fontWeight: 600 }}>
+              Md Pervej Hossain
+            </h1>
+            <h4 className="text-light">Web developer</h4>
+            <p className="text-light pb-2 mt-2">
+              <span className="d-block mb-2">Hello everyone,</span> my name is
+              md pervej Hossain, consectetur adipiscing elit. Etiam suscipit mi
+              eget dui venenatis posuere. In varius nulla non elementum
+              hendrerit. Suspendisse varius sapien odio, in gravida ipsum luctus
+              id. Ut nisl erat, dignissim sed volutpat at, hendrerit imperdiet
+              purus. Maecenas fringilla, augue sed vulputate ullamcorper, risus
+              lorem facilisis massa, a varius nunc tellus sed odio. <br />
+              Suspendisse fermentum lobortis elit sit amet vehicula. Etiam in
+              dolor vitae leo euismod consequat a vitae ligula.Nunc viverra enim
+              purus, vel luctus ante tempus vel. Vivamus et metus massa.
+              Pellentesque at nulla velit. Morbi pellentesque egestas massa in
+              scelerisque. Vivamus pharetra dolor enim, vel vulputate erat
+              euismod sit amet.
+            </p>
+            <MyButton backgroundColor="white">Download Reseume</MyButton>
+          </Col>
+        </Row>
+      </Container>
+    </CustomContainer>
+  );
 };
 
 export default AboutMe;

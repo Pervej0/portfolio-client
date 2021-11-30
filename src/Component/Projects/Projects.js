@@ -12,13 +12,13 @@ const Projects = () => {
       .then((data) => setProjects(data));
   }, []);
   return (
-    <CustomContainer id="projects" className="projects">
+    <CustomContainer id="projects" className="projects my-3">
       <Container>
         <div className="text-light text-center mb-5">
           <h1 className="fw-bolder">My Projects</h1>
-          <p className="">Sample list of projects accomplish so far</p>
+          <p>Sample list of projects accomplish so far</p>
         </div>
-        <Row className="g-4">
+        <Row className="g-4 mt-5">
           {projects.map((item) => (
             <ProjectItem project={item} key={item.projectName} />
           ))}

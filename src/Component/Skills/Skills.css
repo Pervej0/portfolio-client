@@ -1,0 +1,10 @@
+.techIconList {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (max-width: "667px") {
+  .techIconList {
+    width: auto;
+  }
+}

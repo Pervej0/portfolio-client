@@ -10,7 +10,7 @@ const ProjectItem = ({ project }) => {
   return (
     <Col xs={12} md={6}>
       <ProjectDetails lgShow={lgShow} setLgShow={setLgShow} project={project} />
-      <div className="border">
+      <div style={{ border: "1px solid rgba(255,255,255,.1)" }}>
         <div className="item">
           <div className="img-box">
             <img className="img-fluid" src={bannerImg} alt="Projects images" />

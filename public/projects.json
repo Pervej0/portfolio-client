@@ -13,8 +13,14 @@
       "Express",
       "MongodB atlas"
     ],
-    "bannerImg": "https://i.ibb.co/qxcPvX2/project-1.png",
-    "img": "https://i.ibb.co/zS1STWH/Screenshot-2021-11-29-at-20-31-06-Welcome-to-Glass-Shop-world.png",
+    "bannerImg": "https://i.ibb.co/wK0K24V/Optimized-project-1.jpg",
+
+    "images": [
+      "https://i.ibb.co/DtDTJy2/Optimized-project-Details-1.jpg",
+      "https://i.ibb.co/6PgrTr5/Optimized-dashboard.jpg",
+      "https://i.ibb.co/NYfHF4q/Optimized-contact-Us.jpg",
+      "https://i.ibb.co/fvDkpkS/Optimized-manage-Orders.jpg"
+    ],
     "liveSite": "https://niche-products.firebaseapp.com/",
     "clientCode": "https://github.com/Pervej0/glass-store-client",
     "serverCode": "https://github.com/Pervej0/glass-store-server",
@@ -38,8 +44,13 @@
       "Express",
       "MongodB atlas"
     ],
-    "bannerImg": "https://i.ibb.co/LdQ9Wpj/project-2.png",
-    "img": "https://i.ibb.co/xMNkjW5/Screenshot-2021-11-29-at-20-24-31-Welcome-to-Knock-Knock-delebery-center.png",
+
+    "bannerImg": "https://i.ibb.co/rMYDyB7/Optimized-project-2.jpg",
+    "images": [
+      "https://i.ibb.co/6NwbVZL/Optimized-project-Details-2.jpg",
+      "https://i.ibb.co/6s8VNpp/Optimized-about-Us.jpg",
+      "https://i.ibb.co/jMs9fJh/Optimized-add-Product.jpg"
+    ],
     "liveSite": "https://knock-kncok-ceb54.firebaseapp.com/",
     "clientCode": "https://github.com/Pervej0/knock-knock-client",
     "serverCode": "https://github.com/Pervej0/knock-kncok-server",
@@ -54,8 +65,13 @@
     "projectType": "Front-end base application",
     "category": ["Medical", "Clinic", "Hospital"],
     "technologies": ["Html", "Css", "React", "Firebase", "React Router"],
-    "img": "https://i.ibb.co/93TtPyq/screencapture-getwell-clinic-center-web-app-2021-11-29-20-15-03.png",
-    "bannerImg": "https://i.ibb.co/mBSfwrt/project-3.png",
+
+    "images": [
+      "https://i.ibb.co/jVBJ0mM/Optimized-project-Details-4.jpg",
+      "https://i.ibb.co/pvCLqMk/Optimized-get-Well-Contact.jpg",
+      "https://i.ibb.co/x1ZFvKf/Optimized-get-Well-About.jpg"
+    ],
+    "bannerImg": "https://i.ibb.co/FwTSWN9/Optimized-project-3.jpg",
     "liveSite": "https://getwell-clinic-center.web.app/",
     "clientCode": "https://github.com/Pervej0/getWell-clinic-center",
     "serverCode": "",
@@ -70,8 +86,12 @@
     "projectType": "Front-end application",
     "category": ["Coaching Center", "Eduaction"],
     "technologies": ["Html", "Css", "Tailwind", "React", "React Router"],
-    "ing": "https://i.ibb.co/64ShDCJ/screencapture-worldlearner-netlify-app-2021-11-29-20-14-04.png",
-    "bannerImg": "https://i.ibb.co/x3xJJtG/project-4.png",
+    "images": [
+      "https://i.ibb.co/dBr41Bc/Optimized-project-Details-3.jpg",
+      "https://i.ibb.co/TRzL7q3/Optimized-world-Learner-About.jpg",
+      "https://i.ibb.co/GM1rhq1/Optimized-world-Learner-Service.jpg"
+    ],
+    "bannerImg": "https://i.ibb.co/J7MYtTz/Optimized-project-4.jpg",
     "liveSite": "https://worldlearner.netlify.app/",
     "clientCode": "https://github.com/Pervej0/world-learner-client",
     "serverCode": "",
