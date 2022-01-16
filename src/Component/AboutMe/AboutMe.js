@@ -28,11 +28,12 @@ const AboutMe = () => {
               But at the time of my study I feel myself more comfortable in
               computer programming. So I start querying and reach few bootcamp
               course door. I completed my Responsive Web Design (RWD) course
-              from "Cooder Trust Bangladesh". Then to get more confident I
-              choose to walk in specific stack and that is MERN stack. So I set
-              myself in online bootcamp course in "Programming-hero" and
-              completed it with the great reaward. Now, I believe that am in
-              convenient position to co-operate with a company.
+              from "Cooder Trust Bangladesh". <br />
+              <br /> Then to get more confident I choose to walk in specific
+              stack and that is MERN stack. So I set myself in online bootcamp
+              course in "Programming-hero" and completed it with the great
+              reaward. Now, I believe that am in convenient position to
+              co-operate with a company.
             </p>
             <Link to="aboutMe">
               <MyButton backgroundColor="transparent">Read More</MyButton>
