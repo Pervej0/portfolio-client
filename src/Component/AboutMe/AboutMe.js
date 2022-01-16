@@ -23,12 +23,16 @@ const AboutMe = () => {
             <h4 className="text-light">Web developer</h4>
             <p className="text-light pb-2 mt-2">
               <span className="d-block mb-2">Hello everyone,</span> my name is
-              md pervej Hossain, consectetur adipiscing elit. Etiam suscipit mi
-              eget dui venenatis posuere. In varius nulla non elementum
-              hendrerit. Suspendisse varius sapien odio, in gravida ipsum luctus
-              id. Ut nisl erat, dignissim sed volutpat at, hendrerit imperdiet
-              purus. Maecenas fringilla, augue sed vulputate ullamcorper, risus
-              lorem facilisis massa, a varius nunc tellus sed odio.
+              md pervej Hossain, I am currenty studying in Diploma Engineering
+              in Mechanical Technology. Now I am in 6th semesetr of my study.
+              But at the time of my study I feel myself more comfortable in
+              computer programming. So I start querying and reach few bootcamp
+              course door. I completed my Responsive Web Design (RWD) course
+              from "Cooder Trust Bangladesh". Then to get more confident I
+              choose to walk in specific stack and that is MERN stack. So I set
+              myself in online bootcamp course in "Programming-hero" and
+              completed it with the great reaward. Now, I believe that am in
+              convenient position to co-operate with a company.
             </p>
             <Link to="aboutMe">
               <MyButton backgroundColor="transparent">Read More</MyButton>

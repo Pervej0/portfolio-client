@@ -15,6 +15,7 @@ import Skills from "./Component/Skills/Skills";
 import Blogs from "./Component/Blogs/Blogs";
 import AboutMeDetails from "./Component/AboutMe/Compo/AboutMeDetails";
 import TopBar from "./Component/Header/Compo/TopBar";
+import MouseMove from "./MouseMove/MouseMove";
 
 function App() {
   const [isLoading, setIsloading] = useState(true);

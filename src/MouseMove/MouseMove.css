@@ -1,0 +1,22 @@
+.circles {
+  position: absolute;
+  top: 0px;
+  z-index: 9;
+  background: transparent;
+  /*	background-repeat: no-repeat;
+	background-size: cover; */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -1000%);
+    opacity: 0;
+  }
+}

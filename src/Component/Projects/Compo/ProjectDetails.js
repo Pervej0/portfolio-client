@@ -1,5 +1,7 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
+import Slider from "react-animated-slider";
+import { ScrollSlider } from "../../StyledComponent/StyledComponent";
 
 const ProjectDetails = ({ lgShow, setLgShow, project }) => {
   const {
@@ -14,13 +16,6 @@ const ProjectDetails = ({ lgShow, setLgShow, project }) => {
     serverCode,
   } = project;
 
-  const imageStyle = {
-    height: "400px",
-    width: "auto",
-    textAlign: "center",
-    overflowY: "scroll",
-  };
-
   return (
     <Modal
       size="lg"
@@ -34,8 +29,19 @@ const ProjectDetails = ({ lgShow, setLgShow, project }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="text-center" style={imageStyle}>
-          <img className="img-fluid" src={images[0]} alt="project-banner" />
+        <div style={{ overflowY: "scroll" }}>
+          <Slider>
+            {images.map((item, index) => (
+              <ScrollSlider key={index}>
+                <img
+                  className="img-fluid"
+                  src={item}
+                  alt="project-banner"
+                  style={{ width: "400px", objectFit: "cover" }}
+                />
+              </ScrollSlider>
+            ))}
+          </Slider>
         </div>
         <div className="my-3 py-3 project-details">
           <h6>

@@ -126,3 +126,19 @@ export const SkillsBox = styled.div`
     transform: scale(1.2);
   }
 `;
+
+// scoling projects slider
+
+export const ScrollSlider = styled.div`
+  height: 400px;
+  width: 100%;
+  box-sizing: content-box;
+  text-align: center;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+`;
